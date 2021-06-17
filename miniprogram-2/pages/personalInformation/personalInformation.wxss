@@ -1,0 +1,194 @@
+.back {
+  background: rgb(221, 219, 219);
+}
+.image-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.set {
+  margin-left: 640rpx;
+  margin-top: 20rpx;
+  height: 80rpx;
+  width: 80rpx;
+}
+
+.top-container {
+  height: 200rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 4px;
+  background: white;
+}
+
+.avatar {
+  height: 150rpx;
+  width: 150rpx;
+  margin-top: 25rpx;
+  margin-bottom: 25rpx;
+  margin-left: 30rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  border: solid 1px;
+  border-color: rgb(167, 162, 162);
+}
+
+.id-nickname-container {
+  margin-top: 40rpx;
+  margin-left: 20rpx;
+}
+
+.id {
+  color: rgb(160, 155, 155);
+  margin-bottom: 20rpx;
+  font-size: 32rpx;
+}
+
+.nickname {
+  color: rgb(160, 155, 155);
+  font-size: 32rpx;
+}
+
+.borrow-container {
+  margin-top: 40rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border-radius: 4px;
+  background: white;
+  padding-bottom: 25rpx;
+}
+
+.borrow-navigate {
+  display: flex;
+  flex-direction: row;
+}
+
+.my-borrow {
+  margin-top: 25rpx;
+  margin-left: 30rpx;
+  border-left: solid 2px;
+  border-left-color: rgb(238, 46, 46);
+  padding-left: 30rpx;
+  font-weight: bold;
+  color: rgb(51, 49, 49);
+}
+
+.all-borrow {
+  margin-top: 25rpx;
+  margin-left: 320rpx;
+  font-size: 30rpx;
+  color: rgb(170, 168, 168);
+}
+
+.borrow-state-container {
+  margin-top: 40rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.place-books-container {
+  margin-left: 150rpx;
+}
+
+.place-books-img {
+  height: 80rpx;
+  width: 80rpx;
+  margin-left: 20rpx;
+}
+
+.place-books-text {
+  margin-left: 10rpx;
+  font-size: 31rpx;
+  color: rgb(58, 54, 54);
+  font-weight: 600;
+}
+
+.notes-container {
+  margin-left: 150rpx;
+}
+
+.notes-img {
+  height: 80rpx;
+  width: 80rpx;
+  margin-left: 20rpx;
+}
+
+.notes-text {
+  margin-left: 10rpx;
+  font-size: 31rpx;
+  color: rgb(58, 54, 54);
+  font-weight: 600;
+}
+
+.bottom-navigate-container {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  background: white;
+  height: 100rpx;
+  bottom: 0;
+  width: 100%;
+  border-top:solid 1px;
+  border-top-color: rgb(224, 223, 223);
+}
+
+.index-container {
+  margin-top: 10rpx;
+  margin-left: 147rpx;
+}
+
+.index-pic {
+  margin-left: 3rpx;
+  height: 50rpx;
+  width: 50rpx;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.index-text {
+  font-size: 30rpx;
+  text-align: center;
+  color: #707070;
+}
+
+.bookcase-container {
+  margin-top: 10rpx;
+  margin-left: 140rpx;
+}
+
+.bookcase-pic {
+  margin-left: 15rpx;
+  height: 50rpx;
+  width: 50rpx;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.bookcase-text {
+  font-size: 30rpx;
+  text-align: center;
+  color: #707070;
+}
+
+.info-container {
+  margin-top: 10rpx;
+  margin-left: 147rpx;
+}
+
+.info-pic {
+  margin-left: 3rpx;
+  height: 50rpx;
+  width: 50rpx;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.info-text {
+  font-size: 30rpx;
+  text-align: center;
+  color: #707070;
+}
