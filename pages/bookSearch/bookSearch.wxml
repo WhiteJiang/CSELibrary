@@ -1,0 +1,39 @@
+<view class="back">
+  <text>\n</text>
+<view class="title">BOOK SEARCH</view>
+<view class='page_row' ><!--这里插入bindtap-->
+    <view class="search">
+      <view class="df search_arr">
+        <icon class="searchcion" size='20' type='search' style="position: absolute; left: 24rpx; top: 96rpx"></icon>
+        <input class="weui-input" auto-focus placeholder="请输入关键字"/>
+      </view>
+    </view>
+    <view class='search_word' bindtap="toSearchResult">搜索</view>
+  </view>
+  <view class="all_book">
+        <button class="btn-search1" type="primary"  size="mini" bindtap="toBorrow"
+        >可借书籍</button>
+      </view>
+      <view class="donate">
+        <button class="btn-search2" type="primary" size="mini" bindtap="toDonate"
+        >预约捐献</button>
+      </view>
+      <view class="booksize">
+      <image class="book-pic" src="/pics/book.jpg" ></image>
+    </view>
+  <!-- 底部导航栏 -->
+  <view class="bottom-navigate-container">
+    <view class="index-container" >
+      <image class="index-pic" src="/pics/index.png" mode="aspectFit" bindtap="toIndex"></image>
+      <view class="index-text" >首页</view>
+    </view>
+    <view class="info-container">
+      <image class="info-pic" src="/pics/info.png" mode="aspectFit" bindtap="toInfo"></image>
+      <view class="info-text">我的</view>
+    </view>
+    <view class="search-container">
+      <image class="search-pic" src="/pics/search.png" mode="aspectFit" bindtap="toSearch"></image>
+      <view class="search-text">查询</view>
+    </view>
+  </view>
+</view>
