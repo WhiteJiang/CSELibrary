@@ -1,0 +1,31 @@
+{
+  "usingComponents": {},
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "color": "#A0A0A0",
+    "selectedColor": "#FF3300",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath":"image/首页.png",
+        "selectedIconPath": "image/首页_填充.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/帮助.png",
+        "selectedIconPath": "image/帮助_填充.png",
+        "text": "帮助"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/设置.png",
+        "selectedIconPath": "image/设置_填充.png",
+        "text": "设置"
+      }
+
+    ]
+  }
+}
+
+

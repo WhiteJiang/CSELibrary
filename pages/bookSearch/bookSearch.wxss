@@ -1,0 +1,151 @@
+/* pages/bookSearch/bookSearch.wxss */
+.title {
+  display: flex;    /*设置显示样式**/
+  align-items: center;    /**子view垂直居中*/
+  vertical-align: center; /**垂直居中*/
+  justify-content: center; /**内容居中*/
+  flex-direction:row; 
+  color: purple;
+}
+.search{
+  width: 80%;
+}
+.search_arr {
+  border: 1px solid #d0d0d0;
+  border-radius: 10rpx;
+  margin-left: 20rpx;
+}
+.search_arr input{
+  margin-left: 60rpx;
+  height: 60rpx;
+  border-radius: 5px;
+}
+.bc_text {
+  line-height: 68rpx;
+  height: 68rpx;
+  margin-top: 34rpx;
+}
+ 
+.search_word {
+  margin-left: 15rpx;
+  width: 15%;
+  line-height: 150%;
+  text-align: center;
+  border: 1px solid #d0d0d0;
+  border-radius: 10rpx;
+}
+.page_row{
+  display: flex;
+  flex-direction: row
+}
+.searchcion {
+  margin: 10rpx 10rpx 10rpx 10rpx;
+  position: absolute;
+  left:25rpx;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+.btn-search1 {
+  margin-top: 40rpx;
+  margin-left: 150rpx;
+  float: left;
+  border-radius:0px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  font-size: 13px;
+  font-family: "微软雅黑";
+}
+.btn-search2 {
+  margin-top: 40rpx;
+  float: right;
+  margin-right: 150rpx;
+  border-radius: 0px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  font-size: 13px;
+  font-family: "微软雅黑";
+}
+.booksize {
+  margin-top: 180rpx;
+  display:flex;
+  justify-content:center;
+}
+.booksize image{
+  width: 90%;
+}
+.bottom-navigate-container {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  background: white;
+  height: 100rpx;
+  bottom: 0;
+  width: 100%;
+  border-top:solid 1px;
+  border-top-color: rgb(224, 223, 223);
+}
+
+.index-container {
+  margin-top: 10rpx;
+  margin-left: 140rpx;
+}
+
+.index-pic {
+  margin-left: 3rpx;
+  height: 50rpx;
+  width: 50rpx;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.index-text {
+  font-size: 30rpx;
+  text-align: center;
+  color: #707070;
+}
+.info-container {
+  margin-top: 10rpx;
+  margin-left: 140rpx;
+}
+
+.info-pic {
+  margin-left: 3rpx;
+  height: 50rpx;
+  width: 50rpx;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.info-text {
+  font-size: 30rpx;
+  text-align: center;
+  color: #707070;
+}
+.search-container {
+  margin-top: 10rpx;
+  margin-left: 140rpx;
+}
+
+.search-pic {
+  margin-left: 3rpx;
+  height: 50rpx;
+  width: 50rpx;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.search-text {
+  font-size: 30rpx;
+  text-align: center;
+  color: #707070;
+}
+.bottom-container {
+  height: 100rpx;
+  width: 100%;
+}

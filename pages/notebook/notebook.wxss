@@ -1,0 +1,206 @@
+/* pages/notebook/notebook.wxss */
+title{
+  
+    text-align:center;
+    margin-left: 240rpx;
+    font-size: 45rpx;
+    color:blueviolet;
+    background: bottom;
+}
+.xuanxiang{
+    margin-top: 95%;
+    margin-left: 9%;
+    margin-right: 9%;
+    align-items: center;
+    border-radius: 4%;
+    border: 1px;
+    border-style: solid solid solid solid;
+    border-color: gainsboro;
+  }
+   
+  .kuang{
+    
+    display: flex;
+    flex-direction: row;
+    padding-top:3%;
+    padding-left: 6%;
+    padding-bottom: 1%;
+    border: 1px;
+    border-style: none none solid none;
+    border-color: gainsboro;
+  }
+   
+  #kuang1{
+    display: flex;
+    flex-direction: row;
+    padding-top:3%;
+    padding-left: 6%;
+    padding-bottom: 1%;
+    border: 1px;
+    border-style: none none none none;
+    border-color: gainsboro;
+  }
+   
+  .text{
+    width: auto;
+    padding-top: 1%;
+    padding-left: 3%;
+    font-size: 15px;
+   
+  }
+   
+  .gr_image{
+    height: 60rpx;
+    width: 60rpx;
+  }
+   
+  /*右箭头*/
+  .right-arrow {
+      padding-left: 52%;
+      padding-top: 3%;
+      display :inline-block;
+      position: relative;
+      width: 36rpx;
+      height: 36rpx;
+      margin-right: 20rpx;
+  }
+   
+  .right-arrow::after {
+      display: inline-block;
+      content: " ";
+      height: 18rpx;
+      width: 18rpx;
+      border-width: 5rpx 5rpx 0 0;
+      border-color: #c7c7cc;
+      border-style: solid;
+      transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+      position: absolute;
+      top: 35%;
+      right: 6rpx;
+      margin-top: -9rpx;
+  }
+  .msg{
+    display: flex;
+    /* flex布局为列 */
+    flex-direction: column;
+    /*居中 */
+    align-items: center;
+    margin-top: 8%;
+  }
+  .msg_text{
+    font-size: 30rpx;
+    color: #A8A8A8;
+  }
+  .search{
+    margin-top: 40rpx;
+    width: 80%;
+  }
+  .search_arr {
+    border: 1px solid #d0d0d0;
+    border-radius: 10rpx;
+    margin-left: 20rpx;
+  }
+  .search_arr input{
+    margin-left: 60rpx;
+    height: 60rpx;
+    border-radius: 5px;
+  }
+  .bc_text {
+    line-height: 68rpx;
+    height: 68rpx;
+    margin-top: 34rpx;
+  }
+   
+  .sousuo {
+    margin-top: 40rpx;
+    margin-left: 15rpx;
+    width: 15%;
+    line-height: 150%;
+    text-align: center;
+    border: 1px solid #d0d0d0;
+    border-radius: 10rpx;
+  }
+  .page_row{
+    display: flex;
+    flex-direction: row
+  }
+  .searchcion {
+    margin: 10rpx 10rpx 10rpx 10rpx;
+    position: absolute;
+    left:25rpx;
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+  }
+.top{
+    margin-top: 40rpx;
+}
+.middle{
+    width:100%;
+    height:200rpx;
+    position: relative;
+}
+.middle ul {
+    margin-left: 60rpx;
+    width: 600rpx;
+    position: absolute;
+}
+.middle ul li{
+    margin-left: 50rpx;
+    margin-top: 30rpx;
+    
+    height:150rpx;
+    width:240rpx;
+    float: left;
+}
+.middle ul li button{
+    background-color: rgba(119, 206, 233,0.4);
+    width:250rpx;
+    text-align:center ;
+    border-radius:35rpx;
+    border-width: 10rpx;
+}
+.middle .option{
+  margin-top: 20rpx;
+}
+.middle .text{
+    margin-top: 90rpx;
+   position: absolute;
+    width:80%;
+    height:0rpx;
+}
+.down{
+  margin-top: 100rpx;
+}
+ 
+.down ul {
+  margin-left: 0rpx;
+  margin-top:80rpx;
+  width: 900rpx;
+  position: absolute;
+}
+.down ul li{
+  margin-left: 0rpx;
+  margin-top: 80rpx;
+  
+  height:10rpx;
+  width:250rpx;
+  float: left;
+}
+.down ul li image{
+  /*background-color: rgba(119, 206, 233,0.4);*/
+  width:250rpx;
+  text-align:center ;
+  height:80rpx;
+}
+.container2{
+  margin-top: 160rpx;
+}
+.divLine2{
+  background:  #d0d0d0;
+  width: 100%;
+  height: 5rpx;
+  margin-top: 85rpx;
+ }
+ 

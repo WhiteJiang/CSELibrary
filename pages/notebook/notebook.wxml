@@ -1,0 +1,83 @@
+<!--pages/notebook/notebook.wxml-->
+<html>
+<head>
+<title>
+NOTEBOOK
+</title>
+</head>
+<body>
+<div class="top">
+    <view class='page_row' bindtap="suo">
+    <view class="search">
+      <view class="df search_arr">
+     
+        <icon class="searchcion" size='20' type='search'> </icon>
+        <input type="text" placeholder="按科目搜索笔记"/>
+  
+      </view>
+    </view>
+    <view class='sousuo'>搜索</view>
+  </view>
+</div>
+
+<div class="middle">
+  <view class="option">
+  <ul>
+  <li><button class="k1">获取笔记</button></li>
+  <li><button class="k2">预约捐献</button></li>
+  </ul>
+
+</view>
+<div class="text">
+    <image mode="bottom" src="/image/note.png"></image>
+</div>
+</div>
+
+
+
+<div class="up">
+<view class="xuanxiang">
+  
+  <navigator class="kuang" url="../index/index">
+    <image class ="gr_image" mode="aspectFit" src="/image/picture.png"></image>
+    <view class="text">优秀笔记</view>
+    <view class="right-arrow"></view>
+  </navigator>
+  <navigator class="kuang" url="../index/index">
+    <image class ="gr_image" mode="aspectFit" src="/image/envelope.png"></image>
+   <view class="text">评价留言</view>
+   <view class="right-arrow"></view>
+  </navigator>
+ 
+</view>
+ 
+<view class="msg">
+  <text class='msg_text' style="border-bottom:1px solid #CCC">让资源共享,快来浏览优秀的笔记吧!</text>
+</view>
+</div>
+
+<div class="down">
+<view class="iconbuttom">
+  <ul>
+  <li>
+  <navigator class="h1" url="../home/home">
+    <image style="border-right:3px solid #d0d0d0" class ="gr_image" mode="aspectFit" src="/image/back.png"></image>
+    <view class="search-text">首页</view>
+  </navigator></li>
+  <li><navigator class="h2" url="../personalInformation/personalInformation">
+    <image style="border-right:3px solid #d0d0d0" class ="gr_image" mode="aspectFit" src="/image/help.png"></image>
+    <view class="search-text">我的</view>
+  </navigator></li>
+  <li><navigator class="h3" url="../notebook/notebook">
+    <image class ="gr_image" mode="aspectFit" src="/image/set.png"></image>
+    <view class="search-text">查询</view>
+  </navigator></li>
+  </ul>
+</view>
+</div>
+<view class="container2">
+  <view class="divLine2"></view>
+</view>
+
+</body>
+</html>

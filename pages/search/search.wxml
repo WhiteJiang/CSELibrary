@@ -1,0 +1,18 @@
+<view class="back">
+  <text>\n</text>
+<view class="title">搜 索 结 果</view>
+<view class="bottom-navigate-container">
+    <view class="index-container" >
+      <image class="index-pic" src="/pics/index.png" mode="aspectFit" bindtap="toIndex"></image>
+      <view class="index-text" >首页</view>
+    </view>
+    <view class="info-container">
+      <image class="info-pic" src="/pics/info.png" mode="aspectFit" bindtap="toInfo"></image>
+      <view class="info-text">我的</view>
+    </view>
+    <view class="search-container">
+      <image class="search-pic" src="/pics/search.png" mode="aspectFit" bindtap="toSearch"></image>
+      <view class="search-text">查询</view>
+    </view>
+  </view>
+</view>
