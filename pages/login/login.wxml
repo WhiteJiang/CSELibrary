@@ -1,20 +1,13 @@
-<view class="userInfo">
-    <block wx:if="{{!canIUseOpenData}}">
-        <view class='header'>
-            <image src='/pics/index.png'></image>
-        </view>
-        <view class='contentc'>
-            <view>吉吉小鱼程序申请获取以下权限</view>
-            <text>获得你的公开信息(昵称，头像等)</text>
-        </view>
-        <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 授权登陆 </button>
-        <view wx:else> 请使用1.4.4及以上版本基础库 </view>
-      </block>
-
-      <block wx:else>
-
-      </block>
-    <!--<view wx:else>请升级微信版本</view>-->
+<view class="login">
+    <view class="count-container">
+      <view class="text">账号</view>
+      <input class="input" type="number" maxlength="12" placeholder="请输入您的账号" bindinput="countInput"></input>
+    </view>
+    <view class="count-container">
+      <view class="text">密码</view>
+      <input class="input" type="text" maxlength="11" placeholder="请输入您的密码" bindinput="passwordInput"></input>
+    </view>
+    <view bindtap="submit">登录</view>
 </view>
 <!--
 <view wx:else>

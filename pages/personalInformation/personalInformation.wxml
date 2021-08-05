@@ -8,7 +8,7 @@
     <image class="avatar" mode="aspectFit" src="{{avatarUrl}}"></image>
     <view class="id-nickname-container">
       <view class="id">ID: {{userId}}</view>
-      <view class="nickname">昵称: {{nickName}}</view>
+      <view class="nickname">昵称: {{userName}}</view>
     </view>
   </view>
 

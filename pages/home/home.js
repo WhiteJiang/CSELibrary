@@ -4,21 +4,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-    userId: '',
-    userName : '',
-    availableAmount: 0,
+    
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var me = this
-    me.setData({
-      userId : wx.getStorageSync('userId'),
-      userName : wx.getStorageSync('userName'),
-      availableAmount: wx.getStorageSync('availableAmount')
-    })
+    
   },
 
   /**
@@ -69,31 +62,19 @@ Page({
   onShareAppMessage: function () {
     
   },
-
-  toDetail:function(){
-    var me = this;
-    wx.navigateTo({
-      url: '/pages/personalDetail/personalDetail?openId=' + me.data.openId,
+  toIndex:function(){
+    wx.reLaunch({
+      url: '/pages/home/home',
     })
   },
-
-  toBookcase1:function(){
-    //设置app.state方便读取不同的数据
-    app.state = 1;
-    wx.navigateTo({
-      url: 'pages/bookcase',
+  toInfo:function(){
+    wx.reLaunch({
+      url: '/pages/personalInformation/personalInformation',
     })
   },
-
-  toBookcase2:function(){
-    app.state = 2;
-    wx.navigateTo({
-      url: 'pages/bookcase',
+  toSearch:function(){
+    wx.reLaunch({
+      url: '/pages/bookSearch/bookSearch',
     })
-  },
-toIndex:function(){
-  wx.reLaunch({
-    url: '/pages/home/home',
-  })
-}
+  }
 })
