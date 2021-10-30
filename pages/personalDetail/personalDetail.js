@@ -1,18 +1,64 @@
 // pages/personalDetail/personalDetail.js
+var app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    user_id:'',
+    user_name:'',
+    password:'',
+    available_amount:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var me = this
+    me.setData({
+      user_id : app.globalData.userId,
+      user_name : app.globalData.userName,
+      password : app.globalData.password,
+      available_amount : app.globalData.availableAmount
+    })
+  },
 
+  userNameInput:function(e){
+    var me = this
+    if(e.detail.value != null){
+      me.setData({
+        user_name: e.detail.value
+      })
+    }
+  },
+
+  modify:function(){
+    var me = this
+    wx.request({
+      url: 'https://arcsin2.cloud/CSELibrary//ChangeNameServlet',
+      data:{
+        user_id : me.data.user_id,
+        user_name: me.data.user_name,
+        password: me.data.password,
+        available_amount: me.data.available_amount
+      },
+      success : (res) =>{
+        console.log(res)
+        if (res.data != null) {
+          console.log('修改成功')
+          me.setData({
+            user_name: res.data.user_name,
+          })
+          app.globalData.userName =  res.data.user_name,
+          wx.setStorageSync('user_name', me.data.user_name),
+          wx.redirectTo({
+            url: '../personalInformation/personalInformation',
+          })
+        }
+      }
+    })
   },
 
   /**

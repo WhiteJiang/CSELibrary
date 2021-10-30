@@ -1,2 +1,7 @@
-<!--pages/personalDetail/personalDetail.wxml-->
-<text>pages/personalDetail/personalDetail.wxml</text>
+<view class="personDetail">
+    <view class="detail-container">
+      <view class="text">用户名</view>
+      <input class="input" type="text" maxlength="12" placeholder= "{{user_name}}" bindinput="userNameInput"></input>
+    </view>
+    <view bindtap="modify">修改</view>
+</view>

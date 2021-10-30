@@ -14,6 +14,9 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userName: null,
+    userId: null,
+    password: null,
+    availableAmount: null
   }
 })

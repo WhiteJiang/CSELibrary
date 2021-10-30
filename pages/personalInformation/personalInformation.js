@@ -1,12 +1,13 @@
+var app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    userId: '',
-    userName : '',
-    availableAmount: 0,
+    user_id: '',
+    user_name : '',
+    available_amount: 0,
   },
 
   /**
@@ -15,9 +16,9 @@ Page({
   onLoad: function (options) {
     var me = this
     me.setData({
-      userId : wx.getStorageSync('userId'),
-      userName : wx.getStorageSync('userName'),
-      availableAmount: wx.getStorageSync('availableAmount')
+      user_id : wx.getStorageSync('user_id'),
+      user_name : app.globalData.userName,
+      available_amount: wx.getStorageSync('available_amount')
     })
   },
 

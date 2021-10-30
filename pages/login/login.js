@@ -1,15 +1,15 @@
 // pages/login/login.js
 // created by:White Jiang
+var app = getApp();
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-    userId: '',
+    user_id: '',
     password: '',
-    userName: '',
-    availableAmount: '',
+    user_name: '',
+    available_amount: '',
     autoLogin : 0,
   },
 
@@ -19,8 +19,8 @@ Page({
   onLoad: function (options) {
     var me = this
     //自动登录
-    console.log(wx.getStorageSync('userId'))
-    if(wx.getStorageSync('userId') != null){
+    console.log(wx.getStorageSync('user_id'))
+    if(wx.getStorageSync('user_id') != null){
       me.setData({
         autoLogin: 1,
       })
@@ -38,7 +38,7 @@ Page({
           'content-type': 'application/json' // 默认值
         },
         data :{
-          user_id: wx.getStorageSync('userId'),
+          user_id: wx.getStorageSync('user_id'),
           password: wx.getStorageSync('password')
         },
         success : (res) =>{
@@ -46,12 +46,18 @@ Page({
           if (res.data != null) {
             console.log('自动登录成功'),
             me.setData({
-              userName: res.data.user_name,
-              availableAmount: res.data.available_amount
+              user_name: res.data.user_name,
+              available_amount: res.data.available_amount,
+              user_id: res.data.user_id,
+              password: res.data.password
             })
-            console.log(me.data.userName),
-            wx.setStorageSync('userName', me.data.userName),
-            wx.setStorageSync('availableAmount', me.data.availableAmount),
+            console.log(me.data.user_name),
+            app.globalData.userId = me.data.user_id,
+            app.globalData.userName = me.data.user_name,
+            app.globalData.availableAmount = me.data.available_amount,
+            app.globalData.password = me.data.password,
+            wx.setStorageSync('user_id', me.data.user_id),
+            wx.setStorageSync('password', me.data.password)
             wx.redirectTo({
               url: '../home/home',
             })
@@ -61,10 +67,8 @@ Page({
             me.setData({
               autoLogin: 0,
             })
-            wx.setStorageSync('userId', null),
-            wx.setStorageSync('password', null),
-            wx.setStorageSync('userNmae', null),
-            wx.setStorageSync('availableAmount', 0)
+            wx.setStorageSync('user_id', null),
+            wx.setStorageSync('password', null)
           }
         }
       })
@@ -73,7 +77,7 @@ Page({
       wx.request({
         url: 'https://arcsin2.cloud/CSELibrary//LoginServlet',
         data :{
-          user_id: me.data.userId,
+          user_id: me.data.user_id,
           password: me.data.password
         },
         success : (res) =>{
@@ -81,13 +85,15 @@ Page({
           if (res.data != null) {
             console.log('登录成功'),
             me.setData({
-              userName: res.data.user_name,
-              availableAmount: res.data.available_amount
+              user_name: res.data.user_name,
+              available_amount: res.data.available_amount
             })
-            wx.setStorageSync('userId', me.data.userId),
+            app.globalData.userId = me.data.user_id,
+            app.globalData.userName = me.data.user_name,
+            app.globalData.availableAmount = me.data.available_amount,
+            app.globalData.password = me.data.password,
+            wx.setStorageSync('user_id', me.data.user_id),
             wx.setStorageSync('password', me.data.password),
-            wx.setStorageSync('userNmae', me.data.userName),
-            wx.setStorageSync('availableAmount', me.data.availableAmount),
             wx.redirectTo({
               url: '../home/home',
             })
@@ -100,7 +106,7 @@ Page({
       var me = this
       if(e.detail.value != null){
         me.setData({
-          userId: e.detail.value
+          user_id: e.detail.value
         })
       }
   },
