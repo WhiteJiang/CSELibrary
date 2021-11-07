@@ -53,7 +53,7 @@ Page({
           })
           app.globalData.userName =  res.data.user_name,
           wx.setStorageSync('user_name', me.data.user_name),
-          wx.redirectTo({
+          wx.reLaunch({
             url: '../personalInformation/personalInformation',
           })
         }

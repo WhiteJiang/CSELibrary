@@ -30,6 +30,24 @@
     </view>
   </view>
 
+  <!-- 我的预约状态 -->
+  <view class="reserve-container">
+    <view class="reserve-navigate">
+      <view class="my-reserve">我的预约</view>
+      <view class="all-reserve">全部预约 ></view>
+    </view>
+    <view class="reserve-borrow-state-container">
+      <view class="place-borrow-container" bindtap="toReserveBorrow">
+        <image class="place-borrow-img" mode="aspectFit" src="/pics/placeorder.png"></image>
+        <view class="place-borrow-text">已预约借阅</view>
+      </view>
+      <view class="donate-container" bindtap="toReserveDonate">
+        <image class="donate-img" mode="aspectFit" src="/pics/trade.png"></image>
+        <view class="donate-text">已预约捐赠</view>
+      </view>
+    </view>
+  </view>
+
 <!-- 底部导航栏 -->
   <view class="bottom-navigate-container">
     <view class="index-container">

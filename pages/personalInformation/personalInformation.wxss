@@ -124,6 +124,77 @@
   font-weight: 600;
 }
 
+.reserve-container{
+  margin-top: 40rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border-radius: 4px;
+  background: white;
+  padding-bottom: 25rpx;
+}
+
+.reserve-navigate {
+  display: flex;
+  flex-direction: row;
+}
+
+.my-reserve{
+  margin-top: 25rpx;
+  margin-left: 30rpx;
+  border-left: solid 2px;
+  border-left-color: rgb(238, 46, 46);
+  padding-left: 30rpx;
+  font-weight: bold;
+  color: rgb(51, 49, 49);
+}
+
+.all-reserve{
+  margin-top: 25rpx;
+  margin-left: 320rpx;
+  font-size: 30rpx;
+  color: rgb(170, 168, 168);
+}
+
+.reserve-borrow-state-container{
+  margin-top: 40rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.place-borrow-container{
+  margin-left: 150rpx;
+}
+
+.place-borrow-img{
+  height: 80rpx;
+  width: 80rpx;
+  margin-left: 20rpx;
+}
+
+.place-borrow-text{
+  margin-left: 10rpx;
+  font-size: 31rpx;
+  color: rgb(58, 54, 54);
+  font-weight: 600;
+}
+
+.donate-container{
+  margin-left: 150rpx;
+}
+
+.donate-img{
+  height: 80rpx;
+  width: 80rpx;
+  margin-left: 20rpx;
+}
+
+.donate-text{
+  margin-left: 10rpx;
+  font-size: 31rpx;
+  color: rgb(58, 54, 54);
+  font-weight: 600;
+}
+
 .bottom-navigate-container {
   display: flex;
   flex-direction: row;
