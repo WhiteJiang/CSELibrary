@@ -1,7 +1,9 @@
 {
   "pages": [
     "pages/login/login",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/reserveBorrow/reserveBorrow",
+    "pages/reserveDonate/reserveDonate"
   ],
   "window": {
     "backgroundTextStyle": "light",

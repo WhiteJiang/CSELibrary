@@ -1,0 +1,13 @@
+<!--pages/reserveDonate/reserveDonate.wxml-->
+<view class="container">
+  <view class="reserve-containers" wx:for="{{Book}}">
+    <!--显示单个预约的容器-->
+    <view class="reserve-container">
+      <image class="reserve-container-cover" mode="aspectFit" src="../../pics/book.jpg"></image>
+      <view class="reserve-container-information">
+        <view class="reserve-container-name">物品: {{item}}</view>
+        <view class="reserve-container-number">数量：123</view>
+      </view>
+    </view>
+  </view>
+</view>

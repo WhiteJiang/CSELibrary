@@ -5,7 +5,7 @@
   </view>
   <!-- 顶部头像+id+昵称 -->
   <view class="top-container">
-    <image class="avatar" mode="aspectFit" src="{{avatarUrl}}"></image>
+    <image class="avatar" mode="aspectFit" src="../../pics/book.jpg"></image>
     <view class="id-nickname-container">
       <view class="id">ID: {{user_id}}</view>
       <view class="nickname">昵称: {{user_name}}</view>
@@ -16,14 +16,13 @@
   <view class="borrow-container">
     <view class="borrow-navigate">
       <view class="my-borrow">我的借阅</view>
-      <view class="all-borrow">全部借阅 ></view>
     </view>
     <view class="borrow-state-container">
-      <view class="place-books-container" bindtap="toBookcase1">
+      <view class="place-books-container" bindtap="toBook">
         <image class="place-books-img" mode="aspectFit" src="/pics/placeorder.png"></image>
         <view class="place-books-text">已借书本</view>
       </view>
-      <view class="notes-container" bindtap="toBookcase2">
+      <view class="notes-container" bindtap="toNote">
         <image class="notes-img" mode="aspectFit" src="/pics/trade.png"></image>
         <view class="notes-text">已借笔记</view>
       </view>
@@ -34,7 +33,6 @@
   <view class="reserve-container">
     <view class="reserve-navigate">
       <view class="my-reserve">我的预约</view>
-      <view class="all-reserve">全部预约 ></view>
     </view>
     <view class="reserve-borrow-state-container">
       <view class="place-borrow-container" bindtap="toReserveBorrow">
@@ -54,9 +52,13 @@
       <image class="index-pic" src="/pics/index.png" mode="aspectFit" bindtap="toIndex"></image>
       <view class="index-text">首页</view>
     </view>
-    <view class="bookcase-container">
-      <image class="bookcase-pic" src="/pics/shopcar.png" mode="aspectFit" bindtap="toBookcase"></image>
-      <view class="bookcase-text">书柜</view>
+    <view class="search-container">
+      <image class="search-pic" src="/pics/search.png" mode="aspectFit" bindtap="toSearch"></image>
+      <view class="search-text">查询</view>
+    </view>
+    <view class="denote-container">
+      <image class="denote-pic" src="/pics/search.png" mode="aspectFit" bindtap="toDenoate"></image>
+      <view class="denote-text">捐赠</view>
     </view>
     <view class="info-container">
       <image class="info-pic" src="/pics/info.png" mode="aspectFit"></image>

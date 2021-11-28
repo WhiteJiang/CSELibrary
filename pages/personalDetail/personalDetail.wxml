@@ -5,3 +5,10 @@
     </view>
     <view bindtap="modify">修改</view>
 </view>
+<view class="modifPsd">
+    <view class="psd-container">
+      <view class="psd">密码</view>
+      <input class="input" type="text" maxlength="12" placeholder= "" bindinput="passwordInput"></input>
+    </view>
+    <view bindtap="modifypsd">修改</view>
+</view>

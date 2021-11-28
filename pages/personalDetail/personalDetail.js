@@ -34,10 +34,48 @@ Page({
     }
   },
 
+  passwordInput:function(e){
+    var me = this
+    if(e.detail.value !=null){
+      me.setData({
+        password: e.detail.value
+      })
+    }
+  },
+
+  modifypsd:function(){
+    var me = this
+    //修改密码
+    wx.request({
+      url: 'https://arcsin2.cloud/CSELibrary//ChangePasswordServlet',
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      data:{
+        user_id : me.data.user_id,
+        user_name : me.data.user_name,
+        password : me.data.password,
+        available_amount : me.data.available_amount
+      },
+      success : (res) =>{
+        console.log(res)
+        if (res.data != null) {
+          wx.reLaunch({
+            url: '../personalInformation/personalInformation',
+          })
+        }
+      }
+    })
+  },
+
   modify:function(){
     var me = this
+    //修改用户昵称
     wx.request({
       url: 'https://arcsin2.cloud/CSELibrary//ChangeNameServlet',
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
       data:{
         user_id : me.data.user_id,
         user_name: me.data.user_name,
@@ -47,11 +85,10 @@ Page({
       success : (res) =>{
         console.log(res)
         if (res.data != null) {
-          console.log('修改成功')
           me.setData({
-            user_name: res.data.user_name,
+            user_name: me.data.user_name
           })
-          app.globalData.userName =  res.data.user_name,
+          app.globalData.userName =  me.data.user_name,
           wx.setStorageSync('user_name', me.data.user_name),
           wx.reLaunch({
             url: '../personalInformation/personalInformation',

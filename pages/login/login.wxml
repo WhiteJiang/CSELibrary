@@ -1,18 +1,11 @@
-<view class="login">
+<view class="login-container">
     <view class="count-container">
-      <view class="text">账号</view>
+      <view class="text">账号 ：</view>
       <input class="input" type="number" maxlength="12" placeholder="请输入您的账号" bindinput="countInput"></input>
     </view>
     <view class="count-container">
-      <view class="text">密码</view>
+      <view class="text">密码 ：</view>
       <input class="input" type="text" maxlength="11" placeholder="请输入您的密码" bindinput="passwordInput"></input>
     </view>
-    <view bindtap="submit">登录</view>
+    <view bindtap="submit" class="login">登录</view>
 </view>
-<!--
-<view wx:else>
-    <view>
-				
-	</view>
-</view>
--->

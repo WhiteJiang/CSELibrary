@@ -1,0 +1,36 @@
+/* pages/reserveBorrow/reserveBorrow.wxss */
+.container{
+  padding: 0;
+}
+.reserve-containers{
+  display: table-column;
+}
+.reserve-container{
+  background: rgb(55, 110, 192);
+  height: 200rpx;
+  width: 690rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 30rpx;
+  display: flex;
+}
+.reserve-container-cover{
+  height: 150rpx;
+  width: 150rpx;
+  margin-top: 25rpx;
+  margin-bottom: 25rpx;
+  margin-left: 10rpx;
+  margin-right: 20rpx;
+}
+.reserve-container-name{
+  height: 50rpx;
+  margin-top: 35rpx;
+  font-family:‘Franklin Gothic Medium’, ‘Arial Narrow’, Arial, sans-serif;
+  font-size: 40rpx;
+}
+.reserve-container-number{
+  height: 50rpx;
+  margin-top: 30rpx;
+  font-family:‘Franklin Gothic Medium’, ‘Arial Narrow’, Arial, sans-serif;
+  font-size: 40rpx;
+}

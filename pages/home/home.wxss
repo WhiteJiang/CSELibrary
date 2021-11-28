@@ -12,11 +12,12 @@
 
 .index-container {
   margin-top: 10rpx;
-  margin-left: 140rpx;
+  margin-left: 0;
+  width: 180rpx;
 }
 
 .index-pic {
-  margin-left: 3rpx;
+  margin-left: 65rpx;
   height: 50rpx;
   width: 50rpx;
   display: flex;
@@ -30,11 +31,12 @@
 }
 .info-container {
   margin-top: 10rpx;
-  margin-left: 140rpx;
+  margin-left: 0;
+  width: 180rpx;
 }
 
 .info-pic {
-  margin-left: 3rpx;
+  margin-left: 65rpx;
   height: 50rpx;
   width: 50rpx;
   display: flex;
@@ -48,11 +50,12 @@
 }
 .search-container {
   margin-top: 10rpx;
-  margin-left: 140rpx;
+  margin-left: 0;
+  width: 180rpx;
 }
 
 .search-pic {
-  margin-left: 3rpx;
+  margin-left: 65rpx;
   height: 50rpx;
   width: 50rpx;
   display: flex;
@@ -64,7 +67,22 @@
   text-align: center;
   color: #707070;
 }
-.bottom-container {
-  height: 100rpx;
-  width: 100%;
+.denote-container {
+  margin-top: 10rpx;
+  margin-left: 0;
+  width: 180rpx;
+}
+
+.denote-pic {
+  margin-left: 65rpx;
+  height: 50rpx;
+  width: 50rpx;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.denote-text {
+  font-size: 30rpx;
+  text-align: center;
+  color: #707070;
 }

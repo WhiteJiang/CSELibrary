@@ -8,6 +8,7 @@ Page({
     user_id: '',
     user_name : '',
     available_amount: 0,
+    reserve_recoder : null
   },
 
   /**
@@ -33,7 +34,12 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
+    /**
+     * 用于隐藏home按钮
+     */
+    wx.hideHomeButton({
+      success: (res) => {},
+    })
   },
 
   /**
@@ -78,23 +84,33 @@ Page({
     })
   },
 
-  toBookcase1:function(){
+  toBook:function(){
     //设置app.state方便读取不同的数据
     app.state = 1;
     wx.navigateTo({
-      url: 'pages/bookcase',
+      url: '/pages/bookBorrow/bookBorrow',
     })
   },
 
-  toBookcase2:function(){
+  toNote:function(){
     app.state = 2;
     wx.navigateTo({
-      url: 'pages/bookcase',
+      url: '/pages/notebook/notebook',
     })
   },
-toIndex:function(){
-  wx.reLaunch({
-    url: '/pages/home/home',
-  })
-}
+  toIndex:function(){
+    wx.reLaunch({
+      url: '/pages/home/home',
+    })
+  },
+  toReserveBorrow:function(){
+    wx.navigateTo({
+      url: '../reserveBorrow/reserveBorrow',
+    })
+  },
+  toReserveDonate:function(){
+    wx.navigateTo({
+      url: '/pages/reserveDonate/reserveDonate',
+    })
+  }
 })
